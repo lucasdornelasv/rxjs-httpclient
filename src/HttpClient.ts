@@ -341,7 +341,3 @@ export class HttpClient {
 		return this.request<any>(req, { observe: observe as any });
 	}
 }
-
-var client = new HttpClient(null, null);
-
-var a = client.get(null, { responseType: "arraybuffer", observe: "body" });
